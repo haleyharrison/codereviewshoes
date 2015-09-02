@@ -1,0 +1,62 @@
+<head>
+    <title>shoe shopping!</title>
+</head>
+<body>
+    <h1>shoe store!</h1>
+
+<ul>
+  #foreach ($brand in $brands)
+    <li><a href="/brands/$brand.getId()"> see stores in $brand.getBrandName() $brand.getBrandNumber()</a></li>
+  #end
+</ul>
+
+<form action="/brands" method="post">
+  <label for="brandName">brand name</label>
+  <input id="brandName" name="brandName" type="text">
+
+  <label for="brandNumber">brand number</label>
+  <input id="brandNumber" name="brandNumber" type="text">
+
+  <button type="submit">add</button>
+</form>
+
+//
+
+<form action='/brands_delete' method='post'>
+    <label for="brand_id">Select a brand</label>
+    <select id='brand_id' name='brand_id' type='text'>
+      #foreach($brand in $brands)
+        <option value="$brand.getId()"> $brand.getBrandName() </option>
+      #end
+    </select>
+    <button type='submit'>delete brand</button>
+</form>
+
+
+<ul>
+  #foreach ($store in $stores)
+    <li><a href="/stores/$store.getId()"> see brands for $store.getName()</a></li>
+  #end
+</ul>
+
+<form action="/stores" method="post">
+  <label for="storeName">store name</label>
+  <input id="storeName" name="storeName" type="text">
+
+  <label for="enrollmentDate">enrollment date</label>
+  <input id="enrollmentDate" name="enrollmentDate" type="text">
+
+  <button type="submit">add</button>
+</form>
+
+<form action='/stores_delete' method='post'>
+    <label for="store_id">Select a store</label>
+    <select id='store_id' name='store_id' type='text'>
+      #foreach($store in $stores)
+        <option value="$store.getId()"> $store.getName() </option>
+      #end
+    </select>
+    <button type='submit'>delete store</button>
+</form>
+
+</body>
