@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StoreTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-09-02T23:10:48" hostname="epicodus-110.local" time="0.115">
+<testsuite name="StoreTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-09-02T23:35:44" hostname="epicodus-110.local" time="0.121">
   <properties/>
-  <testcase name="getBrands_returnsBrands" classname="StoreTest" time="0.023"/>
-  <testcase name="updateName_changesName" classname="StoreTest" time="0.017"/>
-  <testcase name="find_findsStoreInDatabase_True" classname="StoreTest" time="0.012"/>
-  <testcase name="save_savesCorrectlyIntoDatabase" classname="StoreTest" time="0.012"/>
-  <testcase name="all_emptyAtFirst" classname="StoreTest" time="0.007"/>
-  <testcase name="getId_returnsId" classname="StoreTest" time="0.013"/>
-  <testcase name="equals_returnsTrueIfInputIsTheSame" classname="StoreTest" time="0.005"/>
-  <testcase name="getName_returnsName" classname="StoreTest" time="0.008"/>
-  <testcase name="delete_DeletesFromDatabase" classname="StoreTest" time="0.016"/>
+  <testcase name="getBrands_returnsBrands" classname="StoreTest" time="0.022"/>
+  <testcase name="updateName_changesName" classname="StoreTest" time="0.018"/>
+  <testcase name="find_findsStoreInDatabase_True" classname="StoreTest" time="0.013"/>
+  <testcase name="save_savesCorrectlyIntoDatabase" classname="StoreTest" time="0.013"/>
+  <testcase name="all_emptyAtFirst" classname="StoreTest" time="0.008"/>
+  <testcase name="getId_returnsId" classname="StoreTest" time="0.012"/>
+  <testcase name="equals_returnsTrueIfInputIsTheSame" classname="StoreTest" time="0.004"/>
+  <testcase name="getName_returnsName" classname="StoreTest" time="0.01"/>
+  <testcase name="delete_DeletesFromDatabase" classname="StoreTest" time="0.017"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -79,5 +79,18 @@ public class BrandTest{
     assertEquals(myBrand.getStores().size(), 1);
   }
 
+  @Test
+  public void getStores_returnsMultipleStores(){
+    Store myStore = new Store ("REI");
+    myStore.save();
+    Store otherStore = new Store ("Favorite Store");
+    otherStore.save();
+    Brand myBrand = new Brand ("Nike");
+    myBrand.save();
+    myBrand.addStore(myStore);
+    myBrand.addStore(otherStore);
+    assertEquals(myBrand.getStores().size(), 2);
+  }
+
 
 }
